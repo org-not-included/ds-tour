@@ -23,3 +23,4 @@ console.log(searchRange([5,7,7,8,8,10,11,11,12,13], 7))
 console.log(searchRange([], 0))
 console.log(searchRange([5,7,7,8,8,10], 6))
 console.log(searchRange([1, 0], 1))
+
