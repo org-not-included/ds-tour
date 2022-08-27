@@ -6,8 +6,9 @@ function Node(val, left, right) {
 
 let root = new Node(3, new Node(9), new Node(20, new Node(15), new Node(7)))
 
-// bfs with queue
+// bfs with queue (needs improvement fails certain base cases)
  const zigzag = (root) => {
+    if (root === null) return []
     let levels = []
     let queue = [root]
     let is_order_left = true
@@ -16,15 +17,10 @@ let root = new Node(3, new Node(9), new Node(20, new Node(15), new Node(7)))
         const levelLength = queue.length
         for (var i=0; i<levelLength; i++){
             const node = queue.shift()
-            if (is_order_left){
-                if(node.left) queue.unshift(node.left)
-                if(node.right) queue.unshift(node.right)
-                level.push(node.val)
-            } else {
-                if(node.left) queue.push(node.left)
-                if(node.right) queue.push(node.right)
-                level.push(node.val)
-            }
+            if (is_order_left) level.push(node.val)
+            else level.unshift(node.val)
+            if(node.left) queue.push(node.left)
+            if(node.right) queue.push(node.right)
         }
         levels.push(level)
         is_order_left = !is_order_left
@@ -33,3 +29,4 @@ let root = new Node(3, new Node(9), new Node(20, new Node(15), new Node(7)))
 }
 
 console.log(zigzag(root))
+
