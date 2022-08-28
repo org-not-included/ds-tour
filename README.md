@@ -1,5 +1,5 @@
 # ds-tour
-This repo provides an overview of how JavaScript can be used as a OOP as well as implementing a variety of data structures written using JavaScript. It also includes solutions to the most frequent questions asked during coding interviews. 
+This repo provides an overview of how JavaScript can be used as a OOP as well as implement a variety of data structures written using it. It also includes solutions to the most frequent questions asked during coding interviews. 
 
 ## Explore OOP using JavaScript.
 
