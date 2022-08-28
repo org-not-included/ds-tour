@@ -18,6 +18,7 @@ jobs:
         source-directory: .
         destination-github-username: 'org-not-included'
         destination-repository-name: 'ds-tour'
-        user-email: siddarthpatel97@something+gmail.com
+        user-name: siddarthpatel
+        user-email: siddarthpatel97@gmail.com
         commit-message: See ORIGIN_COMMIT from $GITHUB_REF
         target-branch: main
