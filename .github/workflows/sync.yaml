@@ -5,6 +5,7 @@ on:
       - 'main'
 jobs:
   sync:
+    if: github.repository == 'siddarthpatel/ds-tour'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
