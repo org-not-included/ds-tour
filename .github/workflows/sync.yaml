@@ -10,14 +10,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Pushes to another repository
-        id: push_directory
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.DS_TOUR_PAT }}
-        with:
-          source-directory: .
-          destination-github-username: 'org-not-included'
-          destination-repository-name: 'ds-tour'
-          user-email: siddarthpatel97@something+gmail.com
-          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-branch: main
+      id: push_directory
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DS_TOUR_PAT }}
+      with:
+        source-directory: .
+        destination-github-username: 'org-not-included'
+        destination-repository-name: 'ds-tour'
+        user-email: siddarthpatel97@something+gmail.com
+        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+        target-branch: main
