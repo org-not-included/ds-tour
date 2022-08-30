@@ -15,4 +15,23 @@ function getTriangleRow(row) {
     return map.get(row)
 }
 
-console.log(getTriangleRow(6))
+var generate = function(numRows) {
+    if (numRows === 1) return [[1]]
+    let array = new Array(numRows)
+    array[0] = new Array(1)
+    array[1] = new Array(2)
+    array[0] = [1]
+    array[1] = [1, 1]
+    for (var i=2; i<numRows; i++) {
+        array[i] = new Array(i+1)
+        array[i][0] = 1
+        array[i][i] = 1
+        for (var j = 1; j<i; j++) 
+            array[i][j] = array[i-1][j-1] + array[i-1][j]
+    }
+    return array
+};
+
+// console.log(getTriangleRow(6))
+
+console.log(generate(6))
