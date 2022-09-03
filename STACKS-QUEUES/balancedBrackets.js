@@ -19,21 +19,24 @@ balancedBrackets = (brackets) => {
     for (var i=0; i<brackets.length; i++){
         let c = brackets.charAt(i)
         if (stack.length > parseInt(brackets.length/2))
-            return 'NO'
+            return false
         if (!isClose(c))
             stack.push(c)
         else {
             if (stack.length === 0)
-                return 'NO'
+                return false
             if (getClose(stack.pop()) != c) {
-                return 'NO'
+                return true
             }
+
+            console.log(stack)
         }
     }
     if (stack.length === 0)
-     return 'YES'
+     return true
     else
-     return 'NO'
+     return false
 }
 
 console.log(balancedBrackets('{[()]}'))
+console.log(balancedBrackets('{]'))
