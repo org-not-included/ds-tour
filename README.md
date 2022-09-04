@@ -1,19 +1,31 @@
 # ds-tour
-This repo provides an overview of how JavaScript can be used as a OOP as well as implement a variety of data structures written using it. It also includes solutions to the most frequent questions asked during coding interviews. 
+This repo implements a variety of data structures and shows examples of OOP using JavaScript.  
+  
+The algorithms and solutions in this repo are some of the most frequent questions asked during coding interviews. 
+  
+---  
+  
+## Explore OOP using JavaScript. 
 
-## Explore OOP using JavaScript.
-
-As JavaScript is widely used in Web Development, in this repo we would explore some of the Object Oriented mechanisms supported by JavaScript to get the most out of it. Some of the common interview question in JavaScript on OOPS includes,- “How Object-Oriented Programming is implemented in JavaScript? How they differ from other languages? Can you implement Inheritance in JavaScript and so on…”
-
+As JavaScript is widely used in Web Development, in this repo we would explore some of the Object Oriented mechanisms supported by JavaScript to get the most out of it. 
+  
+Some of the common interview question in JavaScript on OOPS includes:
+- How Object-Oriented Programming is implemented in JavaScript?  
+- How they differ from other languages?  
+- Can you implement Inheritance in JavaScript?
+- and so on…
+  
+---  
+  
 There are certain features or mechanisms which makes a Language Object-Oriented like: 
-
-
+  
 - Object
 - Classes
 - Encapsulation
 - Inheritance
-
-
+  
+---  
+  
 Let’s dive into the details of each one of them and see how they are implemented in JavaScript.
 
 1. **Object** – An Object is a unique entity that contains property and methods. For example “car” is a real life Object, which has some characteristics like color, type, model, horsepower and performs certain action like drive. The characteristics of an Object are called as Property, in Object-Oriented Programming and the actions are called methods. An Object is an instance of a class. Objects are everywhere in JavaScript almost every element is an Object whether it is a function, array, and string. 
