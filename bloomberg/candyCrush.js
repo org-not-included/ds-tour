@@ -20,7 +20,9 @@ const candyCrush = (str) => {
             if (pop_candy[1] < 3) stack.push([candy, pop_candy[1]])
         }
     }
-    console.log(stack)
+    stack.every(arr => arr.splice(1, 1))
+    candies = [...stack].join('')
+    return candies
 }
 
-candyCrush("aabbbacd")
+console.log(candyCrush("aabbbacd"))
