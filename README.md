@@ -4,9 +4,9 @@ This repo provides an overview of how JavaScript can be used as a OOP as well as
 ## What is Javascript?
 Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript is synchronous in nature, and this behavior is acheived through the use of stacks in browsers V8 engine. It can however be synchronously asynchronous. Asynchronous behavior can be leveraged through the use of Browsers web apis (setTimouts/fetch/Promises) which inturn relies on the queue stack and eventLoop to queue these requests. All in all, Javascripts runtime execution is comprised of: 
 
-1. Stack(part of browsers v8 engine)
+1. Stack -- part of browsers v8 engine
 2. Webapis
-3. Queue and eventLoop
+3. Queue and eventLoop -- not a part of v8 engine
 
 More on this can be found in the below article.
 
