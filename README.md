@@ -2,7 +2,12 @@
 This repo provides an overview of how JavaScript can be used as a OOP as well as implement a variety of data structures written using it. It also includes solutions to the most frequent questions asked during coding interviews.
 
 ## What is Javascript?
-Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript is synchronous in nature, and this behavior is acheived through the use of stacks in browsers V8 engine. It can however be synchronously asynchronous. Asynchronous behavior can be leveraged through the use of Browsers web apis (setTimouts/fetch/Promises) which inturn relies on the queue stack and eventLoop to queue these requests. 
+Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript is synchronous in nature, and this behavior is acheived through the use of stacks in browsers V8 engine. It can however be synchronously asynchronous. Asynchronous behavior can be leveraged through the use of Browsers web apis (setTimouts/fetch/Promises) which inturn relies on the queue stack and eventLoop to queue these requests. All in all, Javascripts runtime execution is comprised of: 
+
+1. Stack(part of browsers v8 engine)
+2. Webapis
+3. Queue and eventLoop
+
 More on this can be found in the below article.
 
 https://frontend.turing.edu/lessons/module-3/promises.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=582477081488&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2
