@@ -5,20 +5,28 @@ The algorithms and solutions in this repo are some of the most frequent question
   
 ---  
 ## What is Javascript?
-Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript is synchronous in nature, and this behavior is acheived through the use of stacks in browsers V8 engine. It can however be synchronously asynchronous. Asynchronous behavior can be leveraged through the use of Browsers web apis (setTimouts/fetch/Promises) which inturn relies on the queue stack and eventLoop to queue these requests. All in all, Javascripts runtime execution is comprised of: 
+Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript's default synchronous behavior is achieved through the use of stacks in browsers V8 engine.  
+  
+While being synchronous in nature, it can also act asynchronously. Asynchronous behavior can be leveraged through the use of `Promises`, which depend on the Queue, Stack, and EventLoop to order and process these requests.
 
-1. Stack -- part of browsers v8 engine
-2. Webapis
-3. Queue and eventLoop -- not a part of v8 engine
-
-More on this can be found in the below article.
-
-https://frontend.turing.edu/lessons/module-3/promises.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=582477081488&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2
+A `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
+  
+All modern web browsers have a `v8 engine` which consists of:
+1. (Call) Stack -- contains currently executing functions
+2. Heap -- allocates memory for variables and objects 
+3. Web APIs -- exposed functions, such as `SetTimeout()`
+  
+Javascript has a number of components involved in this process:
+1. (Task) Queue -- A list of functions
+2. EventLoop -- Monitors Queue and Stack for scheduling next tasks
+  
+More info about Javascript synchronicity can be found in [this article](https://frontend.turing.edu/lessons/module-3/promises.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=582477081488&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2).
+  
 ## Explore OOP using JavaScript. 
 
-As JavaScript is widely used in Web Development, in this repo we would explore some of the Object Oriented mechanisms supported by JavaScript to get the most out of it. 
+As JavaScript is widely used in Web Development, in this repo we will explore Object-Oriented paradigms supported in JavaScript. 
   
-Some of the common interview question in JavaScript on OOPS includes:
+A few common OOPS interview questions in JavaScript include:
 - How Object-Oriented Programming is implemented in JavaScript?  
 - How they differ from other languages?  
 - Can you implement Inheritance in JavaScript?
