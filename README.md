@@ -22,7 +22,7 @@ A `v8 engine` collects HTML files and other resources, and represents them as an
 All modern web browsers have a `v8 engine` which consists of:
 1. (Call) Stack -- contains currently executing functions
 2. Heap -- allocates memory for variables and objects 
-3. Web APIs -- exposed functions, such as `SetTimeout()`
+3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
   
 Javascript has a number of components involved in this process:
 1. (Task) Queue -- A list of functions
