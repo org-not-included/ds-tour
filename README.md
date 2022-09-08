@@ -12,7 +12,7 @@ Javascript is a web based scripting programming language that allows you to buil
   
 While being synchronous in nature, it can also act asynchronously.  
  
- Asynchronous behavior can be leveraged through the use of `WebAPIs`, which handle the `Task` separately from the `Call Stack`, allowing the `EventLoop` to continue adding new tasks from the `Task Queue` whenever the `Call Stack` is empty.  
+ Asynchronous behavior can be leveraged through the use of `WebAPIs`. Since they handle the `Task` separately from the `Call Stack`. This allows the `EventLoop` to continue adding new tasks from the `Task Queue`, whenever the `Call Stack` is empty.  
   
 The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` will eventually pick up and send to the `Call Stack`.  
 
