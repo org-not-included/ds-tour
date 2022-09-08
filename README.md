@@ -5,7 +5,7 @@ The algorithms and solutions in this repo are some of the most frequent question
   
 ---  
 ## What is Javascript?
-Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript's default synchronous behavior is achieved through the use of stacks in browsers V8 engine.  
+Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript's default synchronous behavior is achieved through the use of stacks in the browser's V8 engine.  
   
   
 ---  
