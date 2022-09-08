@@ -11,24 +11,29 @@ Javascript is a web based scripting programming language that allows you to buil
 ---  
   
 While being synchronous in nature, it can also act asynchronously.  
+<<<<<<< HEAD
   
  Asynchronous behavior can be leveraged through the use of `WebAPIs`. Since they handle the `Task` separately from the `Call Stack`. This allows the `EventLoop` to continue adding new tasks from the `Task Queue`, whenever the `Call Stack` is empty.  
+=======
+ 
+ Asynchronous behavior can be leveraged through the use of `WebAPIs`, which handle the `Task` separately from the `Call Stack`, allowing the `EventLoop` to continue adding new tasks from the `Task Queue` whenever the `Call Stack` is empty.  
+>>>>>>> 273dbe6 (Update README.md)
   
 The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` will eventually pick up and send to the `Call Stack`.  
 
 
-A `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
+A browser's `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
   
   
-Javascript has a number of components involved in this process:
-1. (Task) Queue -- A list of functions
-2. EventLoop -- Monitors Queue and Stack for scheduling next tasks
-
-
-There are also other components: 
-1. (Call) Stack -- contains currently executing functions (part of `v8 engine` in browser)
-2. Heap -- allocates memory for variables and objects (part of `v8 engine` in browser)
-3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
+Javascript Runtime Environment has a number of components involved:
+  
+| Name         | Component             | Description                                                                                  |
+|--------------|-----------------------|----------------------------------------------------------------------------------------------|
+| (Task) Queue | Javascript            | A list of functions                                                                          |  
+| EventLoop    | Javascript            | Monitors Queue and Stack for scheduling next tasks                                           |
+| (Call) Stack | `v8 engine`           | contains currently executing functions                                                       |
+| Heap         | `v8 engine`           | allocates memory for variables and objects                                                   |
+| Web APIs     | external & `v8engine` | processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.) |
   
 More info about Javascript synchronicity can be found in [this article](https://frontend.turing.edu/lessons/module-3/promises.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=582477081488&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2).
   
