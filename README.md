@@ -7,7 +7,15 @@ The algorithms and solutions in this repo are some of the most frequent question
 ## What is Javascript?
 Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript's default synchronous behavior is achieved through the use of stacks in browsers V8 engine.  
   
-While being synchronous in nature, it can also act asynchronously. Asynchronous behavior can be leveraged through the use of `Promises`, which depend on the Queue, Stack, and EventLoop to order and process these requests.
+  
+---  
+  
+While being synchronous in nature, it can also act asynchronously.  
+ 
+ Asynchronous behavior can be leveraged through the use of `WebAPIs`, which handle the `Task` separately from the `Call Stack`, allowing the `EventLoop` to continue adding new tasks from the `Task Queue` whenever the `Call Stack` is empty.  
+  
+The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` will eventually pick up and send to the `Call Stack`.  
+
 
 A `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
   
