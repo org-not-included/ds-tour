@@ -11,32 +11,15 @@ Javascript is a web based scripting programming language that allows you to buil
 ---  
   
 While being synchronous in nature, it can also act asynchronously.  
-<<<<<<< HEAD
-  
- Asynchronous behavior can be leveraged through the use of `WebAPIs`. Since they handle the `Task` separately from the `Call Stack`. This allows the `EventLoop` to continue adding new tasks from the `Task Queue`, whenever the `Call Stack` is empty.  
-=======
- 
-<<<<<<< HEAD
- Asynchronous behavior can be leveraged through the use of `WebAPIs`, which handle the `Task` separately from the `Call Stack`, allowing the `EventLoop` to continue adding new tasks from the `Task Queue` whenever the `Call Stack` is empty.  
->>>>>>> 273dbe6 (Update README.md)
-=======
- Asynchronous behavior can be leveraged through the use of `WebAPIs`. Since they handle the `Task` separately from the `Call Stack`. This allows the `EventLoop` to continue adding new tasks from the `Task Queue`, whenever the `Call Stack` is empty.  
->>>>>>> f5961c4 (Update README.md)
-  
+   
+Asynchronous behavior can be leveraged through the use of `WebAPIs`. Since they handle the `Task` separately from the `Call Stack`. This allows the `EventLoop` to continue adding new tasks from the `Task Queue`, whenever the `Call Stack` is empty. 
+   
 The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` will eventually pick up and send to the `Call Stack`.  
-
-
+  
 A browser's `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
   
-<<<<<<< HEAD
-=======
-All modern web browsers have a `v8 engine` which consists of:
-1. (Call) Stack -- contains currently executing functions
-2. Heap -- allocates memory for variables and objects 
-3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
->>>>>>> 12eaf5e (Update README.md)
   
-Javascript Runtime Environment has a number of components involved:
+Javascript Runtime Environment has a number of components involved:  
   
 | Name         | Component             | Description                                                                                  |
 |--------------|-----------------------|----------------------------------------------------------------------------------------------|
