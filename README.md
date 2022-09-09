@@ -19,14 +19,16 @@ The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` wi
 
 A `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
   
-All modern web browsers have a `v8 engine` which consists of:
-1. (Call) Stack -- contains currently executing functions
-2. Heap -- allocates memory for variables and objects 
-3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
   
 Javascript has a number of components involved in this process:
 1. (Task) Queue -- A list of functions
 2. EventLoop -- Monitors Queue and Stack for scheduling next tasks
+
+
+There are also other components: 
+1. (Call) Stack -- contains currently executing functions (part of `v8 engine` in browser)
+2. Heap -- allocates memory for variables and objects (part of `v8 engine` in browser)
+3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
   
 More info about Javascript synchronicity can be found in [this article](https://frontend.turing.edu/lessons/module-3/promises.html?ads_cmpid=6451354298&ads_adid=76255849919&ads_matchtype=&ads_network=g&ads_creative=582477081488&utm_term=&ads_targetid=dsa-19959388920&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2).
   
