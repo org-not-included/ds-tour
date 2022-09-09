@@ -28,6 +28,13 @@ The `WebAPI` will send it's result to the `Task Queue`, which the `EventLoop` wi
 
 A browser's `v8 engine` collects HTML files and other resources, and represents them as an interactive webpage for the user.   
   
+<<<<<<< HEAD
+=======
+All modern web browsers have a `v8 engine` which consists of:
+1. (Call) Stack -- contains currently executing functions
+2. Heap -- allocates memory for variables and objects 
+3. Web APIs -- processes running outside stack (such as `SetTimeout()`, `fetch()`, webhook processes, etc.)
+>>>>>>> 12eaf5e (Update README.md)
   
 Javascript Runtime Environment has a number of components involved:
   
