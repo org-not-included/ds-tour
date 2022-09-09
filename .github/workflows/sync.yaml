@@ -5,7 +5,7 @@ on:
       - 'main'
 jobs:
   sync:
-    if: github.repository == 'siddarthpatel/ds-tour'
+    if: github.repository == 'org-not-included/ds-tour'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -17,12 +17,12 @@ jobs:
       id: push_directory
       uses: cpina/github-action-push-to-another-repository@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DS_TOUR_PAT }}
+        API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
       with:
         source-directory: .
-        destination-github-username: 'org-not-included'
+        destination-github-username: 'siddarthpatel'
         destination-repository-name: 'ds-tour'
-        user-name: siddarthpatel
-        user-email: siddarthpatel97@gmail.com
+        user-name: orgnotincluded
+        user-email: orgnotincluded@gmail.com
         commit-message: See ORIGIN_COMMIT from $GITHUB_REF
         target-branch: main
