@@ -13,16 +13,16 @@ jobs:
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-    - name: Pushes to another repository
-      id: push_directory
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
-      with:
-        source-directory: .
-        destination-github-username: 'siddarthpatel'
-        destination-repository-name: 'ds-tour'
-        user-name: orgnotincluded
-        user-email: orgnotincluded@gmail.com
-        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-        target-branch: main
+#     - name: Pushes to another repository
+#       id: push_directory
+#       uses: cpina/github-action-push-to-another-repository@main
+#       env:
+#         API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+#       with:
+#         source-directory: .
+#         destination-github-username: 'siddarthpatel'
+#         destination-repository-name: 'ds-tour'
+#         user-name: orgnotincluded
+#         user-email: orgnotincluded@gmail.com
+#         commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+#         target-branch: main
