@@ -1,9 +1,21 @@
 # ds-tour
-This repo implements a variety of data structures and shows examples of OOP using JavaScript.  
-  
+
+##### Implements a variety of data structures and shows examples of OOP using JavaScript.
+
 The algorithms and solutions in this repo are some of the most frequent questions asked during coding interviews. 
-  
----  
+
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/org-not-included/ds-tour/main)](https://www.codefactor.io/repository/github/org-not-included/ds-tour)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/graphs/contributors)  
+[![GitHub Release Date](https://img.shields.io/github/release-date/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/commits/main)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/graphs/commit-activity)  
+[![GitHub forks](https://img.shields.io/github/forks/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/network)
+[![GitHub stars](https://img.shields.io/github/stars/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/watchers)
+[![Twitter Follow](https://img.shields.io/twitter/follow/OrgNotIncluded?style=flat)](https://twitter.com/intent/follow?screen_name=OrgNotIncluded)  
+  ---  
 ## What is Javascript?
 Javascript is a web based scripting programming language that allows you to build interactive web pages. Javascript's default synchronous behavior is achieved through the use of stacks in the browser's V8 engine.  
   
