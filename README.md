@@ -1,9 +1,9 @@
-# ds-tour
-
+# ds-tour 
+  
 ##### Implements a variety of data structures and shows examples of OOP using JavaScript.
-
+  
 The algorithms and solutions in this repo are some of the most frequent questions asked during coding interviews. 
-
+  
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/org-not-included/ds-tour/main)](https://www.codefactor.io/repository/github/org-not-included/ds-tour)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/org-not-included/ds-tour)](https://github.com/org-not-included/ds-tour/issues)
