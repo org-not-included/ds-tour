@@ -5,7 +5,7 @@
      - *availablity (Every request receives a (non-error) response, without the guarantee that it contains the most recent write)*
      - *partition tolerance (The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes)*
      - When a network partition failure happens, it must be decided whether to cancel the operation and thus decrease the availability but ensure consistency or to proceed with the operation and thus provide availability but risk inconsistency.
-- ACID vs BASE: https://phoenixnap.com/kb/acid-vs-base
+- [ACID vs BASE](https://phoenixnap.com/kb/acid-vs-base):
     - used with SQL (Ex. Transactions) vs used with NOSQL (Ex. Social media feeds)
     - The CAP theorem states that it is impossible to achieve both consistency and availability in a partition tolerant distributed system (i.e., a system which continues to work in cases of temporary communication breakdowns)
     - The fundamental difference between ACID and BASE database models is the way they deal with this limitation. The ACID model provides a consistent system. The BASE model provides high availability
