@@ -37,7 +37,7 @@
 - Random vs Sequential r/w on disk:
     - Random is slower and sequential r/w are faster. You should design your system on sequential r/w.
 
-### Internal concepts:
+## Internal concepts:
 - HTTP vs http2 vs WebSocket
 - TCP/IP model
 - ipv4 vs ipv6
@@ -56,3 +56,18 @@
 - Pub-sub architecture 
 - MapReduce
 - Multithreading, locks, synchronization, CAS(compare and set)
+
+### Tools:
+- Cassandra
+- MongoDB/Couchbase
+- Mysql
+- Memcached
+- Redis
+- Zookeeper
+- Kafka
+- NGINX
+- HAProxy
+- Solr, Elastic search
+- Amazon S3
+- Docker, Kubernetes, Mesos
+- Hadoop/Spark and HDFS
