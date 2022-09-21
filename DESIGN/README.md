@@ -19,4 +19,9 @@
 - Caching (*unsplit cache, splitted cache*):
     - Every node does its own cachening and cached data is not shared between nodes (*unsplit*).
     - Cached data is shared between different nodes (*splitted cache*).
-    - Cached data is stored in memory and is not the source of truth.
+    - Cached data is stored in memory so it has to be small and is not the source of truth.
+- Data center/Racks/Hosts
+- CPU/Memory/Harddrive/Network bandwidth: 
+    - These are all limit resources and you need to decide how you work around these limitations when designing a system. How you improve throughput, latency and scale your system around these limitations.
+- Random vs Sequential r/w on disk:
+    - Random is slower and sequential r/w are faster. You should design your system on sequential r/w.
