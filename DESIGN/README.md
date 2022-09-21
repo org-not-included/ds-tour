@@ -1,4 +1,4 @@
-## General Concepts
+## General concepts:
 - Vertical vs Horizontal scaling
 - CAP theorem: can only achieve only two things:
      - *consistency (Every read receives the most recent write or an error)*
@@ -25,3 +25,23 @@
     - These are all limit resources and you need to decide how you work around these limitations when designing a system. How you improve throughput, latency and scale your system around these limitations.
 - Random vs Sequential r/w on disk:
     - Random is slower and sequential r/w are faster. You should design your system on sequential r/w.
+
+### Internal concepts:
+- HTTP vs http2 vs WebSocket
+- TCP/IP model
+- ipv4 vs ipv6
+- TCP vs UDP
+- DNS lookup
+- Http & TLS
+- Public key infrastructure and certificate authority(CA)
+- Symmetric vs asymmetric encryption
+- Load Balancer
+- CDNs & Edges
+- Bloom filters and Count-Min sketch
+- Paxos 
+- Leader election
+- Design patterns and Object-oriented design
+- Virtual machines and containers
+- Pub-sub architecture 
+- MapReduce
+- Multithreading, locks, synchronization, CAS(compare and set)
