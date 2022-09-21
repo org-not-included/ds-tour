@@ -1,4 +1,4 @@
-## Concepts
+## General Concepts
 - Vertical vs Horizontal scaling
 - CAP theorem: can only achieve only two things:
      - *consistency (Every read receives the most recent write or an error)*
