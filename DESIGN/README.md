@@ -1,3 +1,14 @@
+## Things to consider while designing a system:
+- Features
+- API
+- Availability
+- Latency
+- Scalability
+- Durability
+- Class Diagram
+- Security and Privacy
+- Cost-effective
+
 ## General concepts:
 - Vertical vs Horizontal scaling
 - CAP theorem: can only achieve only two things:
