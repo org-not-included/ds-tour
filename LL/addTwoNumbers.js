@@ -25,11 +25,13 @@ const addLists = (l1, l2) => {
     if(l1 === null)
         return l2
     if(l2 === null)
-        return l3
-    while(l1 !== null || l2 !== null) {
-        sum = ((l1.val + l2.val) % 10) + c
-        c = parseInt((l1.val + l2.val) / 10)
-        curr.next = new ListNode(sum)
+        return l1
+    while(l1 !== null || l2 !== null || c != 0) {
+        var x = (l1 != null) ? l1.val : 0;
+        var y = (l2 != null) ? l2.val : 0;
+        sum = x + y + c;
+        c = parseInt((sum) / 10)
+        curr.next = new ListNode(sum % 10)
         curr = curr.next
         if (l1 != null)
             l1 = l1.next;
