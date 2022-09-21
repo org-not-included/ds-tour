@@ -9,5 +9,14 @@
     - used with SQL (Ex. Transactions) vs used with NOSQL (Ex. Social media feeds)
     - The CAP theorem states that it is impossible to achieve both consistency and availability in a partition tolerant distributed system (i.e., a system which continues to work in cases of temporary communication breakdowns)
     - The fundamental difference between ACID and BASE database models is the way they deal with this limitation. The ACID model provides a consistent system. The BASE model provides high availability
-- Partioning/Sharding data: 
+- [Partioning/Sharding data](https://www.quora.com/Whats-the-difference-between-sharding-DB-tables-and-partitioning-them): 
     - *consistent hashing*
+    - Data is distributed across multiple servers using partitioning, and each partition is further replicated to provide availability. The technique for distributing (aka partitioning) is *consistent hashing*.
+    - Sharding is a method to distribute data across multiple different servers. We achieve horizontal scalability through sharding. It is a type of partitioning, such as Horizontal Partitioning (HP). "Horizontal partitioning", or sharding, is replicating [copying] the schema, and then dividing the data based on a shard key.
+- [Optimistic vs Pessimistic Locking](https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking)
+- SQL DB vs NoSQL 
+- Types of NoSQL (*Key value, wide column, document based, graph based*)
+- Caching (*unsplit cache, splitted cache*):
+    - Every node does its own cachening and cached data is not shared between nodes (*unsplit*).
+    - Cached data is shared between different nodes (*splitted cache*).
+    - Cached data is stored in memory and is not the source of truth.
